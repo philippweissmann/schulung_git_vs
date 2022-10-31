@@ -9,8 +9,6 @@ Philipp Weißmann
 [mail@philipp-weissmann.de](mailto:mail@philipp-weissmann.de)
 ---
 # Agenda
-* Motivation
-* Einführung
 * Hintergrund
 * Konzepte und Arbeiten mit Git
 * Tipps, Quellen und Links
@@ -22,29 +20,19 @@ Philipp Weißmann
 ---
 #[Wir starten hier...](http://geekandpoke.typepad.com/geekandpoke/2012/07/simply-explained-2.html)
 ---
-# Motivation für Versionsmanagement
 
-- Dateien sichern
-  - Sicherungskopie
-  - Versionen
-- Dokumentation von Arbeitsschritten
-- Zusammenarbeit
-  - Austausch
-  - Konkurrierende Änderungen
-
----
-# Historie
+# Fakten
 
 - 2005 von L. Torvalds gestartet
 - Ziele:
   - Verteilt
   - Sicherheit gegen Verfälschung
   - Effizienz
-- 10 Jahre Git: Beliebtestes Versionsmanagementsystem
+- Seit 2015: Beliebtestes Versionsmanagementsystem
 
 ---
 
-# Was macht Git?
+# Leitsatz
 
 - Git verfolgt Änderungen von Inhalten
 
