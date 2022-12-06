@@ -18,7 +18,7 @@ Philipp Weißmann
 #[Simply Explained...](http://geek-and-poke.com/geekandpoke/2012/11/3/simply-explained.html)
 
 ---
-#[Wir starten hier...](http://geekandpoke.typepad.com/geekandpoke/2012/07/simply-explained-2.html)
+#[Wir starten hier...](https://xkcd.com/1597/)
 ---
 
 # Fakten
@@ -35,6 +35,15 @@ Philipp Weißmann
 # Leitsatz
 
 - Git verfolgt Änderungen von Inhalten
+
+---
+
+# Technische Betrachtung
+
+- Git hat eine Datenbank
+- Änderungen nennen wir "Commits"
+- Commits sind wie Speicheradressen
+- Branches sind wie Variablen auf Pointer (Commits)
 
 ---
 
@@ -84,6 +93,10 @@ Einstellungen werden an 3 Orten gespeichert:
 - Editor einstellen:
   - `git config --global core.editor notepad`
   - `git config --global core.editor "'c:\Program Files\Notepad++\notepad++.exe' -multiInst -notabbar -nosession -noPlugin"`
+
+- Standardname für Hauptzweig auf `main` setzen
+  - `git config --global init.defaultBranch main`
+
 ---
 # Zustände
 ![inline](states.png)
@@ -138,6 +151,7 @@ oder interaktiv (öffnet Editor)
   - Nachvollziehbare, kurze Nachricht
   - Beschreibung der Änderung auf logischer Ebene
   - Commit editieren: `git commit --amend`
+  - [Passender XKCD Comic](https://xkcd.com/1296/)
 
 Beispiele:
 - *Changes API from sqlite2 to sqlite3*
@@ -293,8 +307,8 @@ f83fcb6 Add awesome-gyazo
 ---
 # Exkurs: Eigene Kommandos
 - Beispiel: Neues Projekt:
-  - `$ git config --global alias.it '!git init && git commit -m "Erster Commit" --allow-empty'`
-- Wirklich alles 'Stashen'
+  - `git config --global alias.it '!git init && git commit -m "Erster Commit" --allow-empty'`
+- Wirklich alles 'stashen'
   - `git config --global alias.stashall 'stash --all'`
 - Hübsches git log (siehe zuvor)
   - `git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"`
@@ -625,12 +639,15 @@ z.B. `git rebase -i feature/add/sqlite3/support`
 - Chacon, Straub "Pro Git Book", Apress, https://git-scm.com/book/de
 - Loelinger, McCullough "Version Control with Git: Powerful tools and techniques for collaborative software development", Oreilly, 2012
 
+# Grafisches:
+- [Git-Purr](https://github.com/girliemac/a-picture-is-worth-a-1000-words/tree/main/git-purr)
+
 ## Quellen
 - Vortrag von Gareth Hall - Introduction to Git Version Control, 2013
 - Pro Git Book https://git-scm.com/book/de
 
 ## Weitermachen
-- [Oh My Git](https://oh-my-git.org) Spielerisch Git lernen
+- [Oh My Git](https://ohmygit.org) Spielerisch Git lernen
 
 ---
 # Cheat Sheets
